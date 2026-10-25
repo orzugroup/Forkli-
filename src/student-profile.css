@@ -1,0 +1,124 @@
+.language-flag{width:24px;height:17px;display:inline-flex;overflow:hidden;flex:none;border-radius:3px;background:#f1f4f8;box-shadow:0 0 0 1px #14213b14;vertical-align:middle}
+.language-flag svg{display:block;width:100%;height:100%;object-fit:cover}
+.language-flag>span{display:grid;place-items:center;width:100%;font-size:13px}
+.sort-heading{display:inline-flex;align-items:center;gap:5px;padding:0;border:0;background:none;color:#8995a5;font-size:8px;font-weight:700;letter-spacing:.45px;white-space:nowrap}
+.sort-heading:hover{color:#4269c2}
+.sort-heading span{font-size:10px;color:#7b8ca8}
+.bulk-actions{display:flex;align-items:center;gap:10px;padding:10px 15px;background:#f3f7ff;border-bottom:1px solid #e3eaf7;color:#61728c;font-size:9px}
+.bulk-actions>span{margin-right:auto}.bulk-actions b{color:#395a9c}
+.bulk-actions button{display:inline-flex;align-items:center;gap:5px;padding:6px 9px;border:1px solid #dce5f3;border-radius:5px;background:#fff;color:#49668f;font-size:9px}
+.bulk-actions button:hover{background:#edf3ff}
+.language-cell .language-flag{margin-right:1px}
+.student-profile{width:456px;padding:0 25px 22px}
+.profile-hero{display:flex;align-items:center;gap:13px;padding:20px 0 18px;border-bottom:1px solid #edf0f4}
+.profile-photo{width:58px;height:58px;object-fit:cover;border-radius:50%;border:2px solid white;box-shadow:0 0 0 1px #e8edf3}
+.profile-heading{flex:1;min-width:0}
+.profile-heading h2{font:700 16px 'Manrope',sans-serif;color:#24344c;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.profile-subline{display:flex;align-items:center;gap:7px;margin-top:6px;color:#3d9c73;font-size:9px;font-weight:600}
+.profile-subline i{width:3px;height:3px;border-radius:50%;background:#a0acba}
+.profile-subline span{border-radius:10px;background:#eaf7f0;padding:3px 7px}
+.profile-joined{font-size:9px;color:#8f9bad;margin-top:6px}
+.profile-edit-button{width:31px;height:31px;border:1px solid #e4e9f0;background:#fff;color:#697b94;border-radius:6px;flex:none}
+.student-profile-tabs{height:48px;display:flex;gap:15px;border-bottom:1px solid #edf0f4;overflow-x:auto}
+.student-profile-tabs button{position:relative;display:flex;align-items:center;gap:6px;padding:0 3px;border:0;background:none;color:#8290a3;font-size:10px;white-space:nowrap}
+.student-profile-tabs button.active{color:#3567d7;font-weight:600}
+.student-profile-tabs button.active:after{position:absolute;content:'';height:2px;bottom:-1px;left:0;right:0;background:#3567d7;border-radius:3px 3px 0 0}
+.profile-tab-content{padding-bottom:10px}
+.profile-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;padding:16px 0}
+.profile-kpis>div{min-height:84px;border:1px solid #e9edf3;border-radius:7px;padding:10px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.profile-kpis small{font-size:8px;color:#8491a4;white-space:nowrap}
+.profile-kpis b{font:700 16px 'Manrope',sans-serif;color:#31425a}
+.profile-kpis b em{font-style:normal;color:#98a3b1;font-size:11px}
+.profile-kpis>div>span:last-child{font-size:8px;color:#95a1b1;white-space:nowrap}
+.profile-kpis .tiny-progress{height:4px;border-radius:4px;background:#edf1f5;overflow:hidden}
+.tiny-progress i{display:block;height:100%;background:#48b486;border-radius:4px}
+.profile-payment-text.paid{color:#399c70;font-size:12px}.profile-payment-text.pending{color:#c78b32;font-size:12px}.profile-payment-text.late{color:#d05c57;font-size:12px}
+.profile-block{padding:16px 0;border-bottom:1px solid #edf0f4}
+.profile-block:last-child{border-bottom:0}
+.profile-block-title{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:13px}
+.profile-block-title h3{font:700 12px 'Manrope',sans-serif;color:#2c3c53}
+.profile-text-action{border:0;background:none;color:#3569d9;font-size:9px;white-space:nowrap}
+.profile-muted{color:#97a2b1;font-size:8px}
+.profile-course{display:flex;align-items:center;gap:10px;padding:10px;background:#f7f9fc;border-radius:6px}
+.profile-course .language-flag{width:30px;height:21px}
+.profile-course>div{display:grid;gap:4px;min-width:0;flex:1}
+.profile-course>div b{font-size:10px;color:#3a4a60;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.profile-course>div span{font-size:9px;color:#8996a8}
+.profile-course>.level{margin:0}
+.profile-data-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 10px;padding-top:14px}
+.profile-data-grid>div{display:grid;gap:5px;min-width:0}
+.profile-data-grid small,.contact-list small{font-size:8px;color:#929eae}
+.profile-data-grid b{font-size:9px;color:#4a5a70;line-height:1.5}
+.contact-list{display:grid;grid-template-columns:1fr 1fr;gap:14px 10px}
+.contact-list>div{display:flex;align-items:center;gap:8px;min-width:0;color:#7890b2}
+.contact-list>div span{display:grid;gap:4px;min-width:0}
+.contact-list b{font-size:9px;color:#46566d;font-weight:500;overflow-wrap:anywhere}
+.next-class{display:grid;gap:7px;padding:12px;border:1px solid #e9edf3;border-radius:6px}
+.next-class-date{display:flex;align-items:center;gap:6px;font-size:8px;letter-spacing:.4px;color:#5479c5;font-weight:700}
+.next-class>b{font-size:10px;color:#3c4e67}
+.next-class>span:last-child{font-size:9px;color:#8996a8;line-height:1.5}
+.note-preview{padding:10px 11px;border-left:2px solid #7d9de5;background:#f7f9fd;color:#596980;font-size:9px;line-height:1.6}
+.note-preview small{display:block;margin-top:6px;color:#97a2b1;font-size:8px}
+.profile-empty-small{font-size:9px;color:#9aa5b3}
+.attendance-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:16px 0 5px}
+.attendance-summary>div{display:grid;gap:5px;padding:12px 9px;background:#f7f9fc;border-radius:6px}
+.attendance-summary b{font:700 18px 'Manrope';color:#399b70}
+.attendance-summary span{font-size:8px;line-height:1.4;color:#8793a5}
+.attendance-history{display:grid}
+.attendance-record{display:grid;grid-template-columns:82px minmax(0,1fr) auto;align-items:center;gap:9px;padding:11px 0;border-bottom:1px solid #f0f2f5}
+.attendance-record:last-child{border-bottom:0}
+.record-date{font-size:8px;color:#8996a8;white-space:nowrap}
+.record-lesson{display:grid;gap:4px;min-width:0}
+.record-lesson b{font-size:9px;color:#46566d;font-weight:600}
+.record-lesson small{font-size:8px;color:#98a3b1}
+.attendance-status{display:flex;align-items:center;gap:5px;font-size:8px;white-space:nowrap}
+.attendance-status i{width:6px;height:6px;border-radius:50%;background:currentColor}
+.attendance-status.present{color:#399b70}.attendance-status.absent{color:#cc6c68}
+.profile-info-callout{display:flex;align-items:flex-start;gap:8px;padding:11px;border-radius:6px;background:#f5f8fd;color:#6680b1;font-size:8px;line-height:1.5}
+.profile-info-callout svg{flex:none}
+.billing-card{display:flex;align-items:center;gap:10px;margin:15px 0 10px;padding:12px;border:1px solid #e8edf3;border-radius:7px}
+.billing-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:7px;background:#edf3ff;color:#4e72ce}
+.billing-card>div:nth-child(2){display:grid;gap:5px;flex:1}
+.billing-card small{font-size:8px;color:#8d99aa}
+.billing-card b{font:700 15px 'Manrope';color:#30425b}
+.billing-card .payment{font-size:8px}
+.mark-payment-button,.reminder-button{width:100%;min-height:36px;border:1px solid #dce6f4;border-radius:5px;background:#f6f9ff;color:#4269c2;font-size:9px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:7px;margin:8px 0}
+.mark-payment-button:hover,.reminder-button:hover{background:#edf3ff}
+.create-invoice-button{width:100%;min-height:34px;border:1px solid #e2e8f0;border-radius:5px;background:#fff;color:#5d6e84;font-size:9px;font-weight:500;display:flex;align-items:center;justify-content:center;gap:7px;margin:8px 0}
+.create-invoice-button:hover{background:#f8faff;color:#4269c2}
+.reminder-button{background:#fff;color:#61738e;font-weight:500}
+.payment-history{display:grid}
+.payment-record{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:9px;padding:12px 0;border-bottom:1px solid #f0f2f5}
+.payment-record:last-child{border-bottom:0}
+.payment-month{display:grid;gap:4px}
+.payment-month b{font-size:9px;color:#47576d;font-weight:600}
+.payment-month small{font-size:8px;color:#98a3b1}
+.payment-amount{font-size:9px;color:#43546c}
+.payment-record .payment{font-size:8px}
+.add-note-form{padding:15px 0 17px;border-bottom:1px solid #edf0f4}
+.add-note-form>label{display:block;font-size:10px;font-weight:600;color:#47576d;margin-bottom:7px}
+.add-note-form textarea{width:100%;resize:vertical;border:1px solid #e1e7ef;border-radius:5px;padding:10px;color:#34465e;font:10px/1.5 'DM Sans',sans-serif;outline:none}
+.add-note-form textarea:focus{border-color:#8ca9ea}
+.add-note-form textarea::placeholder{color:#aab4c2}
+.add-note-form>div{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:8px}
+.add-note-form>div>span{font-size:8px;color:#929eae}
+.add-note-form .primary-button{height:31px;padding:0 10px;font-size:9px}
+.add-note-form .primary-button:disabled{opacity:.45;cursor:not-allowed}
+.profile-empty{min-height:142px;display:grid;place-content:center;justify-items:center;gap:8px;text-align:center;color:#94a1b3}
+.profile-empty b{font-size:10px;color:#53637a}.profile-empty span{font-size:8px;color:#909cad}
+.notes-timeline article{display:flex;gap:10px;padding:11px 0}
+.notes-timeline-dot{width:8px;height:8px;border:2px solid #7d9de5;border-radius:50%;margin-top:3px;flex:none}
+.notes-timeline article>div{display:grid;gap:6px}
+.notes-timeline p{font-size:9px;line-height:1.55;color:#55667c}
+.notes-timeline small{font-size:8px;color:#98a3b1}
+.profile-footer{position:sticky;bottom:-22px;display:flex;gap:8px;padding:13px 0 0;background:#fff;border-top:1px solid #edf0f4;margin-top:10px}
+.profile-danger{margin-right:auto;border:0;background:none;color:#bd6967;font-size:9px}
+.profile-edit-primary{height:34px;padding:0 11px;border:0;border-radius:5px;background:#2d62e8;color:#fff;font-size:9px;font-weight:600;display:flex;align-items:center;gap:7px}
+.profile-modal-overlay{z-index:35}
+.profile-edit-modal{width:min(560px,100vw);max-width:100%;max-height:92vh;overflow:auto}
+.profile-edit-modal .form-field{min-width:0}.profile-edit-modal .form-field input,.profile-edit-modal .form-field select{min-width:0}.profile-edit-modal .form-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.archive-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:18px}
+.archive-actions .secondary-button,.archive-confirm{height:33px;padding:0 12px;border-radius:5px;font-size:9px}
+.archive-confirm{border:1px solid #e9d5d4;background:#fff5f4;color:#b65a56;font-weight:600}
+@media(max-width:560px){.student-profile{width:min(430px,100vw);padding:0 17px 20px}.profile-hero{gap:10px}.profile-photo{width:51px;height:51px}.student-profile-tabs{gap:12px}.student-profile-tabs button{font-size:9px}.profile-kpis{gap:6px}.profile-kpis>div{padding:9px 7px}.profile-kpis small{font-size:7px}.profile-kpis b{font-size:14px}.profile-kpis>div>span:last-child{font-size:7px}.profile-block{padding:14px 0}.attendance-record{grid-template-columns:72px minmax(0,1fr) auto;gap:6px}.attendance-status{font-size:7px}.payment-record{grid-template-columns:minmax(0,1fr) auto;gap:7px}.payment-record>.payment{grid-column:2}.payment-amount{grid-row:1;grid-column:2;text-align:right}.profile-danger{font-size:8px}.profile-edit-primary{font-size:8px;padding:0 8px}.profile-edit-modal .modal-foot{display:grid;grid-template-columns:1fr auto auto;gap:7px}.profile-edit-modal .modal-foot>span{grid-column:1/-1;margin:0 0 3px}}
+.profile-edit-modal .modal-foot .secondary-button{grid-column:2}.profile-edit-modal .modal-foot .primary-button{grid-column:3}
