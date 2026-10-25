@@ -37,12 +37,12 @@ function BranchDialog({ initial, onClose, onSave }) {
   </div>;
 }
 
-export default function BranchesWorkspace({ branches, setBranches, search, flash, createRequest = 0 }) {
+export default function BranchesWorkspace({ branches, setBranches, search, flash, createRequest = 0, onCreateRequestHandled = () => {} }) {
   const [query, setQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState('Все филиалы');
   const [editing, setEditing] = useState(null);
   const [dialogOpen, setDialogOpen] = useState(false);
-  useEffect(() => { if(createRequest){setEditing(null);setDialogOpen(true);} }, [createRequest]);
+  useEffect(() => { if(createRequest){setEditing(null);setDialogOpen(true);onCreateRequestHandled();} }, [createRequest]);
   const activeCount = branches.filter(branch => branch.status === 'Работает').length;
   const cityCount = new Set(branches.map(branch => branch.city.trim()).filter(Boolean)).size;
   const roomCount = branches.reduce((total, branch) => total + (Number(branch.rooms) || 0), 0);

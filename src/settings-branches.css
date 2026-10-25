@@ -1,0 +1,5 @@
+.settings-main-branches .settings-savebar,.settings-main-branches .settings-demo-foot{display:none}
+.settings-main-branches>.branches-workspace{max-width:none;margin-top:10px}
+.settings-main-branches .branches-workspace .workspace-head{margin-top:0}
+.settings-main-branches .branches-stats{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:900px){.settings-main-branches .branches-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
