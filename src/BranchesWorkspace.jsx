@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Building2, Check, ChevronDown, Clock3, Mail, MapPin, Pencil, Phone, Plus, Search, Star, UserRound, X } from 'lucide-react';
 import './branches-workspace.css';
 
@@ -37,11 +37,12 @@ function BranchDialog({ initial, onClose, onSave }) {
   </div>;
 }
 
-export default function BranchesWorkspace({ branches, setBranches, search, flash }) {
+export default function BranchesWorkspace({ branches, setBranches, search, flash, createRequest = 0 }) {
   const [query, setQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState('Все филиалы');
   const [editing, setEditing] = useState(null);
   const [dialogOpen, setDialogOpen] = useState(false);
+  useEffect(() => { if(createRequest){setEditing(null);setDialogOpen(true);} }, [createRequest]);
   const activeCount = branches.filter(branch => branch.status === 'Работает').length;
   const cityCount = new Set(branches.map(branch => branch.city.trim()).filter(Boolean)).size;
   const roomCount = branches.reduce((total, branch) => total + (Number(branch.rooms) || 0), 0);

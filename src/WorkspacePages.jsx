@@ -90,9 +90,9 @@ function Reports({students,groups,flash}) {
 function SettingsPage({settings,setSettings,flash}) {
   return <SettingsWorkspace settings={settings} setSettings={setSettings} flash={flash}/>;
 }
-export default function WorkspacePages({page,students,setStudents,groups,setGroups,teachers,setTeachers,schedule,setSchedule,settings,setSettings,branches,setBranches,search,flash,onNavigate,onOpenStudent}) {
+export default function WorkspacePages({page,students,setStudents,groups,setGroups,teachers,setTeachers,schedule,setSchedule,settings,setSettings,branches,setBranches,search,flash,onNavigate,onOpenStudent,branchCreateRequest}) {
   if(page==='Обзор') return <Overview students={students} groups={groups} schedule={schedule} onNavigate={onNavigate}/>;
-  if(page==='Филиалы') return <BranchesWorkspace branches={branches} setBranches={setBranches} search={search} flash={flash}/>;
+  if(page==='Филиалы') return <BranchesWorkspace branches={branches} setBranches={setBranches} search={search} flash={flash} createRequest={branchCreateRequest}/>;
   if(page==='Группы') return <GroupWorkspace groups={groups} setGroups={setGroups} students={students} setStudents={setStudents} teachers={teachers} schedule={schedule} setSchedule={setSchedule} search={search} flash={flash} onOpenStudent={onOpenStudent}/>;
   if(page==='Преподаватели') return <TeacherWorkspace students={students} setStudents={setStudents} groups={groups} setGroups={setGroups} teachers={teachers} setTeachers={setTeachers} schedule={schedule} setSchedule={setSchedule} search={search} flash={flash} onOpenStudent={onOpenStudent}/>;
   if(page==='Расписание') return <ScheduleWorkspace schedule={schedule} setSchedule={setSchedule} groups={groups} teachers={teachers} flash={flash} search={search} onNavigate={onNavigate}/>;
