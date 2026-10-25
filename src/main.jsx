@@ -77,7 +77,7 @@ function App() {
   const openStudent = student => { setActivePage('Ученики'); setSearch(''); setSelected(student); setMobileNav(false); };
   return <div className="app-shell">
     <aside className={`sidebar ${mobileNav ? 'sidebar-open' : ''}`}>
-      <div className="brand"><span className="brand-mark"><img src="/favicon-192.png" alt="" /></span><span>Fork<span className="brand-light">li</span></span></div>
+      <div className="brand"><span className="brand-mark"><img src="/favicon-192.png" alt="" /></span><span>Forkli</span></div>
       <div className="side-caption">ОБУЧЕНИЕ</div>
       <nav>{navItems.map(({ label, icon: Icon }) => <button key={label} className={`nav-item ${label === activePage ? 'active' : ''}`} onClick={() => navigate(label)}><Icon size={19} strokeWidth={1.8}/><span>{label}</span>{label==='Ученики' && <span className="nav-count">{students.length}</span>}</button>)}</nav>
       <div className="sidebar-bottom"><button className={`nav-item ${activePage==='Настройки'?'active':''}`} onClick={()=>navigate('Настройки')}><Settings size={18}/><span>Настройки</span></button><button className="help-card" onClick={()=>flash('Центр поддержки')}><span className="help-icon"><CircleHelp size={18}/></span><span><b>Нужна помощь?</b><small>Центр поддержки</small></span><ChevronRight size={15}/></button><div className="side-footer"><span className="online-dot"/>Демо-режим · без передачи данных</div></div>
